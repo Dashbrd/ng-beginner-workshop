@@ -1,4 +1,4 @@
-# Angular Guild Beginner Workshop
+# Angular Beginner Workshop
 
 We will be create a website to display Star Wars Characters! - - - > [Repository](https://github.com/Dashbrd/ng-beginner-workshop)
 
