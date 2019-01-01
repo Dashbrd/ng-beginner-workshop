@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SwPeopleListComponent } from './sw-people-list/sw-people-list.component';
 import { SwCharacterComponent } from './sw-character/sw-character.component';
+import { CharacterSearchComponent } from './character-search/character-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SwPeopleListComponent,
-    SwCharacterComponent
+    SwCharacterComponent,
+    CharacterSearchComponent
   ],
   imports: [
     BrowserModule,
