@@ -1,7 +1,14 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { NgModule } from '@angular/core';
+import { SwPeopleListComponent } from './sw-people-list/sw-people-list.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: SwPeopleListComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
