@@ -1,0 +1,17 @@
+<table class="ui selectable celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Birth Year</th>
+      <th>Eye Color</th>
+      <th>Gender</th>
+      <th>Hair Color</th>
+      <th>Height</th>
+      <th>Mass</th>
+      <th>Skin Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr app-sw-character [character]="person" *ngFor="let person of swCharacters"></tr>
+  </tbody>
+</table>
