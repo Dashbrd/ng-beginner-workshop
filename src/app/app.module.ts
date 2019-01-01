@@ -1,12 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { SwPeopleListComponent } from './sw-people-list/sw-people-list.component';
-import { SwCharacterComponent } from './sw-character/sw-character.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { CharacterSearchComponent } from './character-search/character-search.component';
+import { HeaderComponent } from './header/header.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { SwCharacterComponent } from './sw-character/sw-character.component';
+import { SwPeopleListComponent } from './sw-people-list/sw-people-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { CharacterSearchComponent } from './character-search/character-search.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
