@@ -271,4 +271,16 @@ export class SwPeopleListComponent implements OnInit {
 
   }
 
+  /**
+   * filterData
+   */
+  public filterData(event: string) {
+    this.swCharacters = this.swCharacters.filter((character: StarWarsCharacter) => {
+      if (character.name.includes(event)) {
+        return true;
+      }
+      return false;
+    });
+  }
+
 }
